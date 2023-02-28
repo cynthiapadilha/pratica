@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body {
+        font-size: 1em;
+    }
+
+    body> header{
+        display: block;
+        margin: auto;
+        width:90vw ;
+    }
+    main > section {
+        width:90vw;
+        display: block;
+        margin: auto;
+    }
+    footer{
+        width:90vw;
+        display: block;
+        margin: auto;
+    }
+    
+    
+}
+@media screen and (min-width:992px) {
+    body {
+        font-size: 1.2em;
+    }
+
+    body > header {
+        height: 110px;
+        display: block;
+        margin:auto;
+        width: 80vw;
+    }
+    
+    
+    main > section {
+        display: block;
+        margin: auto;
+        width: 80vw;
+    
+    }
+    footer{
+        display: block;
+        margin: auto;
+        width: 80vw;
+    }
+    
+}

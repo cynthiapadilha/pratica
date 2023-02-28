@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+:root{
+    --cor0:#F2BBBF;
+    --cor1:#A68572;
+    --cor2:#F2D0BD;
+    --cor3:#D9AB9A;
+    --cor4:#F2E8E4;
+}
+
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -11,13 +19,13 @@
 html, body{
     background-color: white;
     min-height: 100vh;
+    
 }
 
 header{
-    background-color: #D9AB9A;
-    width: 98.5vw;
+    background-color:var(--cor3);
     height: 100px;
-    margin-bottom: 15px;
+    
 }
 
 header> h1{
@@ -27,7 +35,7 @@ header> h1{
 }
 
 header > menu > a{
-    background-color: #A68572;
+    background-color:var(--cor0);
     border:1px solid rgba(0, 0, 0, 0.493);
     border-radius: 5px;
     padding: 5px;
@@ -35,11 +43,12 @@ header > menu > a{
     text-decoration: none;
     color: black;
 }
+
 header > menu > a:hover{
-    background-color: #ddb39b;
+    background-color: var(--cor4);
     border: 1px solid #ffffff71;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
-    transition: transform .3s , border 1s;
+    transition: transform .6s , border 1s;
 }
 
 section{
@@ -50,10 +59,22 @@ section{
     box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.507);
 }
 
+
+main > section > h2{
+    margin-bottom: 10px;
+}
+
 main > section > p{
     text-align: justify;
-    background-color: #f2bbbfb6;
-    width: 600px;
+    background-color: rgba(255, 255, 255, 0.555);
+    margin-right: 20px;
+   
+}
+
+section > form{
+   
+   /*fazerrrrrrrrrrrrrrrrrrrr*/
+
 }
 section#img01{
     background-image: url(../imagens/imagem1.jpg);
@@ -69,9 +90,17 @@ section#img02{
     background-attachment: fixed;
 }
 
-footer > p{
-    background-color:#D9AB9A ;
-    padding: 10px;
-    margin-top: 15px;
+footer > p > a{
+    text-decoration: none;
+    color:black;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+}
 
+footer > p{
+    background-color:var(--cor3) ;
+    padding: 10px;
+    border: 2px solid var(--cor2);
+    text-align: center;
 }
