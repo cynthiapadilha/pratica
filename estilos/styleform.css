@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+:root{
+    --cor0:#F2BBBF;
+    --cor1:#A68572;
+    --cor2:#F2D0BD;
+    --cor3:#D9AB9A;
+    --cor4:#F2E8E4;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}

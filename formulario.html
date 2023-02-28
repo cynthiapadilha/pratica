@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de incrição</title>
-
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/styleform.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Sriracha&display=swap');
@@ -19,6 +18,7 @@
     <main>
         <form action="pagina.php" method="post">
             <fieldset>
+                <legend>Contato</legend>
                 <span class="material-symbols-outlined">
                 person
                 </span>
@@ -35,7 +35,57 @@
                 <input type="tel" name="phone" id="iphone" required placeholder="Seu telefone">
             </fieldset>
             <fieldset>
-                <label for=""></label>
+                <legend>Gênero</legend>
+                
+                <input type="checkbox" name="sexo" id="masc">
+                <label for="masc">Masculino</label><br>
+                <input type="checkbox" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <label for="icidade">Cidade:</label>
+                    <select name="cidade" id="icidade" >
+                        <option value="escolha"></option>
+                        <option value="adri">Adrianópolis</option>
+                        <option value="agu">Agudos do Sul</option>
+                        <option value="almt">Almirante Tamandaré</option>
+                        <option value="arauc">Araucária</option>
+                        <option value="bals">Balsa Nova</option>
+                        <option value="boc">Bocaiúva do Sul</option>
+                        <option value="camp">Campina Grande do Sul</option>
+                        <option value="campTen">Campo do Tenente</option>
+                        <option value="campolargo">Campo Largo</option>
+                        <option value="cmpmagro">Campo Magro</option>
+                        <option value="crroazul">Cerro Azul</option>
+                        <option value="colmbo">Colombo</option>
+                        <option value="contenda">Contenda</option>
+                        <option value="ctba">Curitiba</option>
+                        <option value="drulyss">Doutor Ulysses</option>
+                        <option value="fzdriogrd">Fazenda Rio Grande</option>
+                        <option value="itap">Itaperuçu</option>
+                        <option value="lapa">Lapa</option>
+                        <option value="mandi">Mandirituba</option>
+                        <option value="pien">Piên</option>
+                        <option value="pinhais">Pinhais</option>
+                        <option value="piraq">Piraquara</option>
+                        <option value="qatrobrr">Quatro Barras</option>
+                        <option value="quit">Quitandinha</option>
+                        <option value="rbrcosul">Rio Branco do Sul</option>
+                        <option value="rion">Rio Negro</option>
+                        <option value="sjp">São José dos Pinhais</option>
+                        <option value="tjsul">Tijucas do Sul</option>
+                        <option value="tunaspr">Tunas do Paraná</option>
+                    </select>
+
+                <br>
+                <label for="icep" >CEP:</label>
+                <input type="number" name="cep" id="icep" minlength="8" required><br>
+                <label for="iend">Endereço:</label>
+                <input type="text" name="end" id="iend" minlength="8" required><br>
+                <label for="inum">Número:</label>
+                <input type="number" name="num" id="inum" required>
+
             </fieldset>
         </form>
     </main>
